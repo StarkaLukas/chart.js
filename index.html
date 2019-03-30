@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chart.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="icon" href="./images/favicon.png" type="image/gif" sizes="16x16">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+</head>
+
+<body>
+    <img src="./images/chart.png" alt="Chart.js" width="40%" height="auto">
+    <section>
+        <div>
+            let ctx = document.getElementById('chart1').getContext('2d');<br>
+            let myChart = new Chart(ctx, {<br>
+            type: 'bar',<br>
+            data: {},<br>
+            options: {} <br>
+            });
+        </div>
+        <div>
+            <canvas id="chart1" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            data: {<br>
+            labels: ['Wien', 'Niederösterreich', 'Oberösterreich', 'Steiermark', 'Tirol', 'Kärnten', 'Salzburg',<br>
+            'Vorarlberg', 'Burgenland'],<br>
+            datasets: [{<br>
+            label: 'Einwohner',<br>
+            data: [1898000, 1677831, 1482300, 1243089, 754821, 560983, 555298, 394224, 293446] <br>
+        </div>
+        <div>
+            <canvas id="chart2" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            data: {<br>
+            labels: ['Wien', 'Niederösterreich', 'Oberösterreich', 'Steiermark', 'Tirol', 'Kärnten', 'Salzburg',<br>
+            'Vorarlberg', 'Burgenland'],<br>
+            datasets: [{<br>
+            label: 'Einwohner',<br>
+            data: [1898000, 1677831, 1482300, 1243089, 754821, 560983, 555298, 394224, 293446] <br>
+            backgroundColor: 'red'
+        </div>
+        <div>
+            <canvas id="chart3" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            backgroundColor: [ <br>
+            'rgba(255, 99, 132, 0.2)', <br>
+            'rgba(54, 162, 235, 0.2)', <br>
+            'rgba(255, 206, 86, 0.2)', <br>
+            'rgba(75, 192, 192, 0.2)', <br>
+            'rgba(153, 102, 255, 0.2)', <br>
+            'rgba(255, 159, 64, 0.2)', <br>
+            'rgba(68, 72, 255, 0.2)', <br>
+            'rgba(105, 232, 12, 0.2)', <br>
+            'rgba(255, 118, 7, 0.2)' <br>
+            ]
+        </div>
+        <div>
+            <canvas id="chart4" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            borderWidth: 2, <br>
+            borderColor: 'black', <br>
+            hoverBorderWidth: 4, <br>
+            hoverBorderColor: 'red' <br>
+        </div>
+        <div>
+            <canvas id="chart21" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            options: { <br>
+            legend: { <br>
+            labels: {<br>
+            fontColor: 'red',<br>
+            fontFamily: 'serif',<br>
+            fontSize: 18,<br>
+            fontStyle: 'italic'<br>
+            }<br>
+            }<br>
+            }
+        </div>
+        <div>
+            <canvas id="chart5" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            options: { <br>
+            legend: { <br>
+            display: false <br>
+            } <br>
+            }
+        </div>
+        <div>
+            <canvas id="chart6" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            options: { <br>
+            legend: { <br>
+            display: true, <br>
+            position: 'bottom', <br>
+            } <br>
+            }
+        </div>
+        <div>
+            <canvas id="chart7" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            options: { <br>
+            animation: { <br>
+            duration: 5000, <br>
+            easing: 'easeInBounce' <br>
+            } <br>
+            } <br>
+            <a href="https://easings.net" target="_blank">Easing equations</a>
+        </div>
+        <div>
+            <canvas id="chart8" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            options: {<br>
+            layout: {<br>
+            padding: {<br>
+            left: 100,<br>
+            right: 100,<br>
+            top: 0,<br>
+            bottom: 100<br>
+            }<br>
+            }<br>
+            }<br>
+        </div>
+        <div>
+            <canvas id="chart9" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            options: { <br>
+            title: { <br>
+            display: true, <br>
+            position: 'top', <br>
+            fontSize: 14, <br>
+            fontStyle: 'bold', <br>
+            fontColor: 'darkblue', <br>
+            padding: 10, <br>
+            lineHeight: 1.2, <br>
+            text: 'Bevölkerung Österreichs sortiert nach Bundesländern' <br>
+            } <br>
+            }
+        </div>
+        <div>
+            <canvas id="chart10" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            options: { <br>
+            tooltips: { <br>
+            enabled: false, <br>
+            } <br>
+            }
+        </div>
+        <div>
+            <canvas id="chart11" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            options: { <br>
+            tooltips: { <br>
+            enabled: true, <br>
+            intersect: false, <br>
+            backgroundColor: 'rgba(205, 205, 205, 1)', <br>
+            borderColor: 'rgba(0, 0, 0, 1)', <br>
+            borderWidth: 4 <br>
+            } <br>
+            }
+        </div>
+        <div>
+            <canvas id="chart12" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            let chart = new Chart(ctx, { <br>
+            type: 'bar', <br>
+            data: data, <br>
+            options: options <br>
+            });
+        </div>
+        <div>
+            <canvas id="chart13" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            let chart = new Chart(ctx, { <br>
+            type: 'line', <br>
+            data: data, <br>
+            options: options <br>
+            });
+        </div>
+        <div>
+            <canvas id="chart14" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            let chart = new Chart(ctx, { <br>
+            type: 'radar', <br>
+            data: data, <br>
+            options: options <br>
+            });
+        </div>
+        <div>
+            <canvas id="chart15" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            let chart = new Chart(ctx, { <br>
+            type: 'pie', <br>
+            data: data, <br>
+            options: options <br>
+            });
+        </div>
+        <div>
+            <canvas id="chart16" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            let chart = new Chart(ctx, { <br>
+            type: 'doughnut', <br>
+            data: data, <br>
+            options: options <br>
+            });
+        </div>
+        <div>
+            <canvas id="chart17" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            let chart = new Chart(ctx, { <br>
+            type: 'polarArea', <br>
+            data: data, <br>
+            options: options <br>
+            });
+        </div>
+        <div>
+            <canvas id="chart18" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            let chart = new Chart(ctx, { <br>
+            type: 'bubble', <br>
+            data: {<br>
+            datasets: [{<br>
+            label: 'Daten',<br>
+            data: [{x : 10, y: 10, r: 15}, {x: 0, y: 20, r: 15}, {x: 20, y: 10, r: 15}],<br>
+            options: options <br>
+            });
+        </div>
+        <div>
+            <canvas id="chart19" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <section>
+        <div>
+            let myChart = new Chart(ctx, { <br>
+            type: 'scatter', <br>
+            data: { <br>
+            datasets: [{ <br>
+            label: 'Scatter Dataset', <br>
+            data: [{ <br>
+            x: -10, <br>
+            y: 0 <br>
+            }, { <br>
+            x: 0, <br>
+            y: 10 <br>
+            }, { <br>
+            x: 10, <br>
+            y: 5 <br>
+            }] <br>
+            }] <br>
+            }, <br>
+            options: { <br>
+            scales: { <br>
+            xAxes: [{ <br>
+            type: 'linear', <br>
+            position: 'bottom' <br>
+            }] <br>
+            } <br>
+            } <br>
+            });
+        </div>
+        <div>
+            <canvas id="chart20" width="800" height="400"></canvas>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
